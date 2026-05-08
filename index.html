@@ -688,66 +688,6 @@
         font-weight: 700;
       }
 
-      .editor-bar {
-        position: fixed;
-        left: 364px;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        gap: 26px;
-        height: 86px;
-        padding: 0 14px;
-        border: 1px solid #464646;
-        border-bottom: 0;
-        border-radius: 18px 18px 0 0;
-        background: rgba(43, 43, 43, 0.98);
-        box-shadow: 0 -10px 26px rgba(0, 0, 0, 0.45);
-      }
-
-      .tool {
-        width: 58px;
-        height: 58px;
-        display: grid;
-        place-items: center;
-        border: 0;
-        border-radius: 9px;
-        background: transparent;
-        color: white;
-        font-size: 31px;
-      }
-
-      .tool.active {
-        background: #1197ef;
-      }
-
-      .start {
-        height: 48px;
-        min-width: 164px;
-        padding: 0 24px;
-        border: 0;
-        border-radius: 8px;
-        background: var(--blue);
-        color: white;
-        font-size: 21px;
-        font-weight: 600;
-      }
-
-      .divider {
-        width: 1px;
-        align-self: stretch;
-        background: #555;
-      }
-
-      .code {
-        width: 72px;
-        height: 58px;
-        border: 0;
-        border-radius: 10px;
-        background: #383838;
-        color: white;
-        font-size: 28px;
-      }
-
       @media (max-width: 820px) {
         body {
           overflow: auto;
@@ -793,13 +733,6 @@
           gap: 14px;
         }
 
-        .editor-bar {
-          left: 92px;
-          right: 10px;
-          justify-content: space-between;
-          gap: 8px;
-        }
-
         .settings-panel {
           position: fixed;
           left: 86px;
@@ -812,12 +745,6 @@
 
         .aspect-options {
           grid-template-columns: repeat(3, 1fr);
-        }
-
-        .start {
-          min-width: 0;
-          padding: 0 14px;
-          font-size: 16px;
         }
       }
     </style>
@@ -974,16 +901,7 @@
 
           <div class="empty-state">No videos yet</div>
         </section>
-
-        <div class="editor-bar" aria-label="Editing tools">
-          <button class="tool active" type="button" aria-label="Select">&#8961;</button>
-          <button class="tool" type="button" aria-label="Pan">&#9793;</button>
-          <button class="tool" type="button" aria-label="Bubble">&#9692;</button>
-          <button class="start" type="button">Start editing</button>
-          <div class="divider"></div>
-          <button class="code" type="button" aria-label="Code">&lt;/&gt;</button>
-        </div>
-      </main>
+</main>
     </div>
   </body>
 </html>
